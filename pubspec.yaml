@@ -41,6 +41,10 @@ dependencies:
   http: ^1.6.0
   url_launcher: ^6.3.2
 
+# Evita path_provider_android 2.3.x (trae jni y falla el build APK en este entorno)
+dependency_overrides:
+  path_provider_android: 2.2.22
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
